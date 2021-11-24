@@ -8,7 +8,8 @@ body {
     background: #232229;
     color: #FFFFFF;
     font-family: Jost;
-    height: 100vh;
+    padding: 30px;
+
 }
 
 .header {
@@ -16,7 +17,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
 
     .header__title {
         font-weight: 500;
@@ -67,6 +67,7 @@ body {
         font-size: 1rem;
         line-height: 150%;
     }
+
     .task-box {
         position: absolute;
         width: 374px;
@@ -74,12 +75,12 @@ body {
         left: 27px;
         top: 386px;
         padding: 10px;
-    
+
         background: #2B2A33;
         border: 1px dashed #6C6A7C;
         box-sizing: border-box;
         border-radius: 7px;
-    
+
         color: white;
         font-family: Jost;
         font-style: normal;
@@ -87,7 +88,22 @@ body {
         font-size: 1rem;
         line-height: 23px;
     }
-    
+
+    .btn {
+        position: absolute;
+        left: 70%;
+        right: 12.72%;
+        top: 57%;
+        bottom: 53.93%;
+        background: #E68181;
+        border-radius: 50%;
+        border: none;
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+
+    }
+
     .tasks {
         position: absolute;
         width: 36px;
@@ -96,16 +112,16 @@ body {
         top: 499px;
         font-size: 1rem;
     }
-    
+
     .tasks-p {
-    
+
         position: absolute;
         width: 300px;
         height: 23px;
         left: 27px;
         top: 543px;
         color: #6C6A7C;
-    font-weight: 400;
+        font-weight: 400;
         font-family: Jost;
         font-style: normal;
         font-weight: normal;
@@ -115,3 +131,63 @@ body {
 
 }
 
+@media only screen and (min-width: 768px) {
+
+    body {}
+
+    .main-container {
+
+        h1 {
+            position: absolute;
+            width: 438px;
+            height: 58px;
+            left: 131px;
+            top: 178px;
+            font-size: 2.25rem;
+            font-weight: 600;
+            line-height: 104.5%;
+        }
+
+        p {
+
+            position: absolute;
+            width: 506px;
+            height: 48px;
+            left: 131px;
+            top: 244px;
+        }
+
+        .task-box {
+            position: absolute;
+            width: 506px;
+            height: 60px;
+            left: 131px;
+            top: 328px;
+            padding: 10px;
+        }
+
+        .tasks {
+            position: absolute;
+            width: 36px;
+            height: 23px;
+            left: 131px;
+            top: 439px;
+            font-size: 1rem;
+        }
+
+        .tasks-p {
+
+            position: absolute;
+            width: 300px;
+            height: 23px;
+            left: 131px;
+            top: 487px;
+
+        }
+
+    }
+
+
+
+
+}
